@@ -51,7 +51,7 @@
     </div>
 
     <!-- Timer -->
-    <div class="quiz-box">
+    <div class="quiz_box">
       <header>
         <div class="title">Mindiser Quiz</div>
         <div class="timer">
@@ -62,12 +62,41 @@
       </header>
       <section>
         <!-- Question and answer option -->
-        <div class="question-text"></div>
-        <div class="option-list"></div>
+        <div class="question-text">
+          <span>In which continent is biafra?</span>
+        </div>
+        <!-- Answer Options -->
+        <div class="choose_ans">
+          <div class="option-list">
+            <span>Asia</span>
+            <div><i class="fas fa-times"></i></div>
+          </div>
+
+          <div class="option-list">
+            <span>Europe</span>
+            <div><i class="fas fa-times"></i></div>
+          </div>
+
+          <div class="option-list">
+            <span>Africa</span>
+            <div><i class="fas fa-check"></i></div>
+          </div>
+
+          <div class="option-list">
+            <span>America</span>
+            <div><i class="fas fa-times"></i></div>
+          </div>
+        </div>
       </section>
       <!-- Footer -->
       <footer>
         <div class="total-question"></div>
+        <span
+          ><p>1</p>
+          of
+          <p>6</p>
+          Questions</span
+        >
         <button class="next-btn">Next Question</button>
       </footer>
     </div>
@@ -82,7 +111,10 @@
       <button class="replay">Play again</button>
       <button class="exit-game">Quit Game</button>
     </div>
-
+    <script
+      src="https://kit.fontawesome.com/a6f48824c3.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

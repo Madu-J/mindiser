@@ -15,13 +15,14 @@ body {
 }
 
 /* Logo */
-img {
+.logo {
     width: 50vh;
     align-items: center;
 }
 
 /* Button */
-.start_btn {
+.start_btn,
+.quiz_box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,14 +31,22 @@ img {
 
 .start_btn button {
     background: #fff;
-    font-size: 110%;
-    font-weight: 600px;
+    font-size: 180%;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
     padding: 15px 30px;
     outline: none;
-    border-radius: 1rem;
+    border-radius: 5px;
 }
 
+.start_btn button:hover {
+    background: #ffff00;
+}
+
+
 .info_box {
+    display: none;
     position: absolute;
     top: 80%;
     left: 50%;
