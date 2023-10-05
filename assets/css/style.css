@@ -21,8 +21,7 @@ body {
 }
 
 /* Button */
-.start_btn,
-.quiz_box {
+.start_btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -111,6 +110,76 @@ body {
     background: #fff;
 }
 
+/* Quiz timer */
+.quiz_box {
+    width: 450px;
+    height: 400px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    top: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quiz_box header {
+    display: flex;
+    background: black;
+    height: 80px;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    border: 1px solid rgb(250, 250, 0);
+}
+
+.timer {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.title {
+    display: flex;
+    font-size: 130%;
+    font-weight: 600;
+    padding: 0 65px;
+}
+
+.time_left {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    font-size: 150%;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+.timer_sec {
+    font-size: 180%;
+    font-weight: 700;
+    background: #ffff00;
+    color: black;
+    height: 30px;
+    width: 45px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffff00;
+    user-select: none;
+}
+
+section {
+    padding: 20px 100px;
+}
+
 /* Media query for Large devices(laptops and desktops, 992px and up) */
 @media screen and (min-width: 900px) {
     .logo {
@@ -119,7 +188,8 @@ body {
         margin-top: 20px;
     }
 
-    .info_box {
+    .info_box,
+    .quiz_box {
         top: 65%;
     }
 
