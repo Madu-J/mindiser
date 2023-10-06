@@ -10,7 +10,6 @@
 
 /* General body style */
 body {
-    background: rgb(250, 250, 0);
     font-family: "Lota", sans-serif;
 }
 
@@ -196,6 +195,11 @@ section {
     .info_box .quiz_info_list {
         padding: 0 35px;
     }
+
+    .quiz_box {
+        width: 70%;
+        height: 400px;
+    }
 }
 
 /* Media query for Large devices(laptops and desktops, 992px and up) */
@@ -205,5 +209,10 @@ section {
         margin-left: 600px;
         margin-top: 25px;
 
+    }
+
+    .quiz_box {
+        width: 50%;
+        height: 400px;
     }
 }
