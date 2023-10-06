@@ -114,6 +114,7 @@ body {
 
 /* Quiz display area */
 .quiz_box {
+    display: none;
     position: absolute;
     top: 70%;
     left: 50%;
@@ -237,6 +238,34 @@ section .choose_ans .option_list {
 
 footer .next_btn:hover {
     background: #ffff00;
+}
+
+/* Style quiz result area */
+.quiz_result {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: black;
+    color: #fff;
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quiz_result .result_icon {
+    font-size: 400%;
+    color: #ffff00;
+}
+
+.quiz_result .complete_quiz {
+    font-size: 130%;
+    font-weight: 600;
 }
 
 
