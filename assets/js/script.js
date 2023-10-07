@@ -7,18 +7,18 @@ let quiz_box = document.querySelector(".quiz_box");
 let replay_btn = document.querySelector(".buttons replay");
 let exit_game_btn = document.querySelector(".buttons exit_game");
 
-// Start Quiz button active 
+// Start Quiz button active
 start_btn.onclick = () => {
-    info_box.classList.add("activeInfo");
+  info_box.classList.add("activeInfo");
 };
 
 // Exit Quiz button active
 exit_btn.onclick = () => {
-    info_box.classList.remove("activeInfo");
+  info_box.classList.remove("activeInfo");
 };
 
-// Contiune Quiz button active 
+// Contiune Quiz button active
 contiune_btn.onclick = () => {
-    info_box.classList.remove("activeInfo");
-    quiz_box.classList.add("activeQuiz");
+  info_box.classList.remove("activeInfo");
+  quiz_box.classList.add("activeQuiz");
 };
