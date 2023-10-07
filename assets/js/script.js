@@ -5,3 +5,8 @@ let exit_btn = document.querySelector(".buttons exit");
 let contiune_btn = document.querySelector(".buttons contiune");
 let replay_btn = document.querySelector(".buttons replay");
 let exit_game_btn = document.querySelector(".buttons exit_game");
+
+// Start Quiz button active 
+start_btn.onclick = () => {
+    info_box.classList.add("activeInfo");
+};

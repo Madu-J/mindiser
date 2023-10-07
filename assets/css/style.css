@@ -30,8 +30,16 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.info_box.activeInfo {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+
+}
+
 .start_btn button {
-    background: #fff;
+    background: #ffff00;
     font-size: 180%;
     font-weight: 600;
     width: 200px;
@@ -42,7 +50,7 @@ body {
 }
 
 .start_btn button:hover {
-    background: #ffff00;
+    background: #fff;
 }
 
 
@@ -54,9 +62,9 @@ body {
     width: 540px;
     background: black;
     color: white;
-    /* opacity: 0;
+    opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
 
 .info_box .quiz_info {
