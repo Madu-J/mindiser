@@ -21,10 +21,21 @@ exit_btn.onclick = () => {
 contiune_btn.onclick = () => {
     info_box.classList.remove("activeInfo"); //Hide quiz info box
     quiz_box.classList.add("activeQuiz"); //Show the quiz box
-    showQuestions(6);
+    showQuestions(0);
 };
 
 let que_count = 0;
+
+let next_btn = quiz_box.querySelector(".next_btn");
+
+next_btn.onclick = () => {
+    if (que_count < questions.length - 1) {
+        que_count++;
+        showQuestions(que_count);
+    } else {
+        console.log("Congratulations, you have completed the Quiz!");
+    }
+};
 
 //Questions and options 
 function showQuestions(index) {
