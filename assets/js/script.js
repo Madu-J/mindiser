@@ -26,6 +26,7 @@ contiune_btn.onclick = () => {
 
 let que_count = 0;
 
+//Nest question button active
 let next_btn = quiz_box.querySelector(".next_btn");
 
 next_btn.onclick = () => {
@@ -37,15 +38,24 @@ next_btn.onclick = () => {
     }
 };
 
-//Questions and options 
+//Questions and options
 function showQuestions(index) {
     let question_text = document.querySelector(".question_text");
     let option_list = document.querySelector(".option_list");
-    let que_tag = '<span>' + questions[index].question + '</span>';
-    let option_tag = '<div class="option_list">' + questions[index].options[0] + '<span></span></div>';
-    + '<div class="option_list">' + questions[index].options[1] + '<span></span></div>';
-    + '<div class="option_list">' + questions[index].options[2] + '<span></span></div>';
-    + '<div class="option_list">' + questions[index].options[3] + '<span></span></div>';
+    let que_tag = "<span>" + questions[index].num + "." + questions[index].question + "</span>";
+    let option_tag =
+        '<div class="option_list">' +
+        questions[index].options[0] +
+        "<span></span></div>";
+    +'<div class="option_list">' +
+        questions[index].options[1] +
+        "<span></span></div>";
+    +'<div class="option_list">' +
+        questions[index].options[2] +
+        "<span></span></div>";
+    +'<div class="option_list">' +
+        questions[index].options[3] +
+        "<span></span></div>";
     question_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
 }
