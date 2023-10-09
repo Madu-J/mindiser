@@ -22,7 +22,7 @@ contiune_btn.onclick = () => {
     info_box.classList.remove("activeInfo"); //Hide quiz info box
     quiz_box.classList.add("activeQuiz"); //Show the quiz box
     showQuestions(0);
-    queCounter(0);
+    queCounter(1);
 };
 
 let que_count = 0;

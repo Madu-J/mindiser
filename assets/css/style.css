@@ -17,9 +17,10 @@ body {
 }
 
 /* Logo */
-.logo {
-    width: 50vh;
+.heading .logo {
+    width: 45vh;
     align-items: center;
+    padding: 0 30px;
 }
 
 /* Button */
@@ -37,7 +38,6 @@ body {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%);
-
 }
 
 .start_btn button {
@@ -54,7 +54,6 @@ body {
 .start_btn button:hover {
     background: #fff;
 }
-
 
 .info_box {
     position: absolute;
@@ -130,9 +129,10 @@ body {
 .quiz_box {
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
-    width: 250px;
+    width: 100%;
+    height: 500px;
     background: black;
     color: #fff;
     opacity: 0;
@@ -188,7 +188,6 @@ body {
     width: 45px;
     height: 30px;
     border-radius: 3px;
-
 }
 
 /* Style Quiz questuin  and Answer section */
@@ -225,7 +224,6 @@ section .choose_ans .option_list {
 
 .option_list .fa-times {
     color: #ff0000;
-
 }
 
 /* Style Quiz Footer */
@@ -339,14 +337,16 @@ footer .next_btn:hover {
         width: 80%;
         height: 350px;
     }
-
 }
-
 
 /* Media query for Large devices(laptops and desktops, 992px and up) */
 @media screen and (min-width: 900px) {
-    .logo {
-        width: 25%;
+    .start_btn {
+        top: 80%;
+    }
+
+    .heading .logo {
+        width: 45%;
         margin-left: 350px;
         margin-top: 20px;
     }
@@ -354,7 +354,8 @@ footer .next_btn:hover {
     .info_box,
     .quiz_box,
     .quiz_result {
-        top: 65%;
+        top: 80%;
+        left: 55%;
     }
 
     .info_box .quiz_info_list {
@@ -363,22 +364,29 @@ footer .next_btn:hover {
 
     .quiz_box,
     .quiz_result {
-        width: 80%;
-        height: 400px;
+        width: 60%;
+        height: 500px;
     }
 }
 
 /* Media query for Large devices(laptops and desktops, 992px and up) */
 @media screen and (min-width: 1200px) {
-    .logo {
-        width: 20%;
-        margin-left: 600px;
-        margin-top: 25px;
 
+    .start_btn {
+        top: 70%;
     }
 
+    .heading .logo {
+        width: 40%;
+        padding-left: 0 80px;
+        padding-top: 0 25px;
+    }
+
+    .info_box,
     .quiz_box {
-        width: 50%;
-        height: 400px;
+        width: 45%;
+        height: 450px;
+        top: 90%;
+        left: 45%;
     }
 }
