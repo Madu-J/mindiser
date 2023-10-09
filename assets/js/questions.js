@@ -1,7 +1,7 @@
 // Create an array for question answers and options
 let questions = [
     {
-        num: 1,
+        numb: 1,
         question: "In which continent is Biafra located?",
         answer: "Africa",
         options: [
@@ -12,7 +12,7 @@ let questions = [
         ]
     },
     {
-        num: 2,
+        numb: 2,
         question: "How many years does Biafria existed and when?",
         answer: "3 years 1967 to 1970",
         options: [
@@ -24,7 +24,7 @@ let questions = [
 
     },
     {
-        num: 3,
+        numb: 3,
         question: "Biafra has many site attraction, which one of these is the most significant?",
         answer: "Ogbunike-Cave",
         options: [
@@ -35,7 +35,7 @@ let questions = [
         ]
     },
     {
-        num: 4,
+        numb: 4,
         question: "Who was the leader of Biafra?",
         answer: "Odimegwu Ojukwu",
         options: [
@@ -46,7 +46,7 @@ let questions = [
         ]
     },
     {
-        num: 5,
+        numb: 5,
         question: "Which of these organsitions is currently piloting the affiars of the Biafra people?",
         answer: "Biafra Republic Goverment in Exile",
         options: [
@@ -57,7 +57,7 @@ let questions = [
         ]
     },
     {
-        num: 6,
+        numb: 6,
         question: "Which of the these are Biafra speaking language?",
         answer: "Igbo-Ibibio-Igala-Izon",
         options: [
@@ -68,7 +68,7 @@ let questions = [
         ]
     },
     {
-        num: 7,
+        numb: 7,
         question: "What was the most weapon used against Biafra during the civil war?",
         answer: "Air, Land, Sea blockade and starvation",
         options: [

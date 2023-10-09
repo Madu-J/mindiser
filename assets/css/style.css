@@ -230,7 +230,7 @@ section .choose_ans .option_list {
 
 /* Style Quiz Footer */
 .quiz_box footer {
-    height: 50px;
+    height: 30px;
     width: 100%;
     padding: 0 10px;
     display: flex;
@@ -363,7 +363,7 @@ footer .next_btn:hover {
 
     .quiz_box,
     .quiz_result {
-        width: 70%;
+        width: 80%;
         height: 400px;
     }
 }
