@@ -216,6 +216,7 @@ section .choose_ans .option_list {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .option_list .fa-check {
@@ -224,6 +225,14 @@ section .choose_ans .option_list {
 
 .option_list .fa-times {
     color: #ff0000;
+}
+
+.choose_ans .option_list.correct{
+    color: #ff0000;
+}
+
+.choose_ans .option_list.incorrect{
+    color: #008000;
 }
 
 /* Style Quiz Footer */

@@ -46,26 +46,53 @@ next_btn.onclick = () => {
 function showQuestions(index) {
     let question_text = document.querySelector(".question_text");
     let option_list = document.querySelector(".option_list");
-    let que_tag = "<span>" + questions[index].numb + "." + questions[index].question + "</span>";
+    let que_tag =
+        "<span>" +
+        questions[index].numb +
+        "." +
+        questions[index].question +
+        "</span>";
     let option_tag =
         '<div class="option_list">' +
         questions[index].options[0] +
-        '<span></span></div>';
+        "<span></span></div>";
     +'<div class="option_list">' +
         questions[index].options[1] +
-        '<span></span></div>';
+        "<span></span></div>";
     +'<div class="option_list">' +
         questions[index].options[2] +
-        '<span></span></div>';
+        "<span></span></div>";
     +'<div class="option_list">' +
         questions[index].options[3] +
-        '<span></span></div>';
+        "<span></span></div>";
     question_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
+
+    let option = option_list.querySelectorAll(".option_list");
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute("onclick", "optionSelected(this)");
+    }
+}
+
+function optionSelected(answer) {
+    let userAns = answer.textContent;
+    let correctAns = questions[que_count].answer;
+    if (userAns == correctAns) {
+        answer.classList.add("correct");
+        console.log("You are correct");
+    } else {
+        answer.classList.add("incorrect");
+        console.log("Incorrect answer");
+    }
 }
 
 function queCounter(index) {
     let bottom_ques_counter = quiz_box.querySelector(".total-question");
-    let totalQuesCountTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
+    let totalQuesCountTag =
+        "<span><p>" +
+        index +
+        "</p>of<p>" +
+        questions.length +
+        "</p>Questions</span>";
     bottom_ques_counter.innerHTML = totalQuesCountTag;
 }
