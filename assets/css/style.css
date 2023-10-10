@@ -37,7 +37,7 @@ body {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .start_btn button {
@@ -65,7 +65,7 @@ body {
     color: white;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.9);
     transition: all 0.3s ease;
 }
 
@@ -201,12 +201,12 @@ body {
     font-weight: 600;
 }
 
-.quiz_box section .choose_ans {
+.quiz_box section .option_list {
     display: block;
     padding: 10px 0;
 }
 
-section .choose_ans .option_list {
+section .option_list .option {
     background-color: #252525;
     border: 1px solid #252525;
     border-radius: 3px;
@@ -227,12 +227,16 @@ section .choose_ans .option_list {
     color: #ff0000;
 }
 
-.choose_ans .option_list.correct{
+.option_list .option.correct {
     color: #ff0000;
 }
 
-.choose_ans .option_list.incorrect{
+.option_list .option.incorrect {
     color: #008000;
+}
+
+.option_list .option.disabled {
+    pointer-events: none;
 }
 
 /* Style Quiz Footer */
@@ -380,7 +384,6 @@ footer .next_btn:hover {
 
 /* Media query for Large devices(laptops and desktops, 992px and up) */
 @media screen and (min-width: 1200px) {
-
     .start_btn {
         top: 70%;
     }
