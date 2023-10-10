@@ -61,6 +61,9 @@ function showQuestions(index) {
     }
 }
 
+let tickIcon = '<div class="icon tick"><i class="fas fa-check"></i></div>';
+let crossIcon = '<div class="icon cross"><i class="fas fa-times"></i></div>';
+
 function optionSelected(answer) {
     let userAns = answer.textContent;
     let correctAns = questions[que_count].answer;
@@ -68,9 +71,11 @@ function optionSelected(answer) {
     if (userAns == correctAns) {
         answer.classList.add("correct");
         console.log("You are correct");
+        answer.insertAdjacentHTML("beforeend", tickIcon);
     } else {
         answer.classList.add("incorrect");
         console.log("Incorrect answer");
+        answer.insertAdjacentHTML("beforeend", crossIcon);
 
         //Choose correct answer if user answer is incorrect
         for (let i = 0; i < allOptions; i++) {

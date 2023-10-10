@@ -221,19 +221,23 @@ section .option_list .option {
 }
 
 .option_list .fa-check {
-    color: #008000;
+    color: #3cf00a;
+    font-size: 250%;
+    font-weight: 700;
 }
 
 .option_list .fa-times {
-    color: #ff0000;
+    color: hsl(0, 100%, 55%);
+    font-size: 250%;
+    font-weight: 700;
 }
 
 .option_list .option.correct {
-    color: #ff0000;
+    color: #3cf00a;
 }
 
 .option_list .option.incorrect {
-    color: #008000;
+    color: hsl(0, 100%, 55%);
 }
 
 .option_list .option.disabled {

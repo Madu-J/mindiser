@@ -6,8 +6,8 @@ let questions = [
         answer: "Africa",
         options: [
             "Asia",
-            "Europe",
             "Africa",
+            "Europe",
             "America"
         ]
     },
@@ -59,12 +59,12 @@ let questions = [
     {
         numb: 6,
         question: "Which of the these are Biafra speaking language?",
-        answer: "Igbo-Ibibio-Igala-Izon",
+        answer: "Igbo, Ibibio, Igala, Izon",
         options: [
             "Igbo, Hausa, Izon, Ebira",
             "Yoruba, Igbo, Hausa",
             "Ibibio, Jukun, Koro, Idoma",
-            "Igbo, Ibibio, Izon, Ebira"
+            "Igbo, Ibibio, Igala, Izon"
         ]
     },
     {
