@@ -21,6 +21,7 @@ body {
     width: 45vh;
     align-items: center;
     padding: 0 30px;
+    border-radius: 10px;
 }
 
 /* Button */

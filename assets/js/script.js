@@ -72,11 +72,11 @@ function optionSelected(answer) {
         answer.classList.add("incorrect");
         console.log("Incorrect answer");
 
-        for (let i = 0; i < allOptions;) {
+        //Choose correct answer if user answer is incorrect
+        for (let i = 0; i < allOptions; i++) {
             if (option_list.children[i].textContent == correctAns) {
                 option_list.children[i].setAttribute("class", "option correct");
             }
-
         }
 
     }
