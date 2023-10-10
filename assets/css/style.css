@@ -191,6 +191,16 @@ body {
     border-radius: 3px;
 }
 
+/* Time line */
+.quiz_box header .timer_line {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    width: 50%;
+    background: red;
+}
+
 /* Style Quiz questuin  and Answer section */
 .quiz_box section {
     background: #000;
