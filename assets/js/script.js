@@ -71,8 +71,17 @@ function optionSelected(answer) {
     } else {
         answer.classList.add("incorrect");
         console.log("Incorrect answer");
+
+        for (let i = 0; i < allOptions;) {
+            if (option_list.children[i].textContent == correctAns) {
+                option_list.children[i].setAttribute("class", "option correct");
+            }
+
+        }
+
     }
 
+    //Disable other options once user select answer
     for (let i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
@@ -84,6 +93,6 @@ function optionSelected(answer) {
 
 function queCounter(index) {
     let bottom_ques_counter = quiz_box.querySelector(".total-question");
-    let totalQuesCountTag = '<span><p>' + que_count + '</p>of<p>' + questions.length + '</p>Questions</span>';
+    let totalQuesCountTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
     bottom_ques_counter.innerHTML = totalQuesCountTag;
 }

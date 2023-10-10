@@ -77,5 +77,5 @@ let questions = [
             "Less soldiers, less weapons",
             "No air force"
         ]
-    },
+    }
 ];
