@@ -34,7 +34,8 @@ body {
 }
 
 .info_box.activeInfo,
-.quiz_box.activeQuiz {
+.quiz_box.activeQuiz,
+.result_box.activeResult {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -297,11 +298,8 @@ footer .next_btn:hover {
     background: #fff;
 }
 
-
-
-
 /* Style quiz result area */
-.quiz_result {
+.result_box {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -322,17 +320,17 @@ footer .next_btn:hover {
     transition: all 0.3s ease;
 }
 
-.quiz_result .result_icon {
+.result_box .result_icon {
     font-size: 90px;
     color: #ffff00;
 }
 
-.quiz_result .complete_quiz {
+.result_box .complete_quiz {
     font-size: 120%;
     font-weight: 600;
 }
 
-.quiz_result .score_text span {
+.result_box .score_text span {
     display: flex;
     font-size: 110%;
     font-weight: 400;
@@ -343,12 +341,14 @@ footer .next_btn:hover {
     padding: 0 5px;
 }
 
-.quiz_result .exit_buttons {
+.result_box .buttons {
     display: flex;
     margin: 20px 0;
 }
 
-.quiz_result .exit_buttons button {
+
+
+.result_box .buttons button {
     font-size: 90%;
     font-weight: 600;
     height: 30px;
@@ -361,16 +361,16 @@ footer .next_btn:hover {
     transition: all 0.3s ease;
 }
 
-.quiz_result .exit_buttons .replay {
+.result_box .buttons .contiune {
     background: yellow;
     font-weight: 800;
 }
 
-.exit_buttons .replay:hover {
+.buttons .contiune:hover {
     background: #fff;
 }
 
-.exit_buttons .exit_game:hover {
+.buttons .exit:hover {
     background: #ffff00;
 }
 
@@ -378,7 +378,7 @@ footer .next_btn:hover {
 @media screen and (min-width: 768px) {
 
     .quiz_box,
-    .quiz_result {
+    .result_box {
         width: 80%;
         height: 350px;
     }
@@ -398,7 +398,7 @@ footer .next_btn:hover {
 
     .info_box,
     .quiz_box,
-    .quiz_result {
+    .result_box {
         top: 80%;
         left: 55%;
     }
@@ -408,7 +408,7 @@ footer .next_btn:hover {
     }
 
     .quiz_box,
-    .quiz_result {
+    .result_box {
         width: 60%;
         height: 500px;
     }

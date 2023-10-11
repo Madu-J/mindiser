@@ -14,7 +14,7 @@ let exit_game_btn = document.querySelector(".buttons exit_game");
 
 // Start Quiz button active
 start_btn.onclick = () => {
-    info_box.classList.add("activeInfo");
+    info_box.classList.add("activeInfo"); //Display info-box
 };
 
 // Exit Quiz button active
@@ -37,9 +37,13 @@ let que_numb = 1;
 let counter;
 let timeValue = 25;
 let widthValue = 0;
+let userScore = 0;
 
 //Nest question button active
 let next_btn = quiz_box.querySelector(".next_btn");
+let result_box = document.querySelector(".result_box");
+let restart_quiz = result_box.querySelector(".buttons .contiune");
+let quit_quiz = result_box.querySelector(".buttons .exit");
 
 next_btn.onclick = () => {
     if (que_count < questions.length - 1) {
@@ -54,6 +58,7 @@ next_btn.onclick = () => {
         next_btn.style.display = "none";
     } else {
         console.log("Congratulations, you have completed the Quiz!");
+        showResultBox();
     }
 };
 
@@ -83,6 +88,8 @@ function optionSelected(answer) {
     let correctAns = questions[que_count].answer;
     let allOptions = option_list.children.length;
     if (userAns == correctAns) {
+        userScore += 1;
+        console.log(userScore);
         answer.classList.add("correct");
         console.log("You are correct");
         answer.insertAdjacentHTML("beforeend", tickIcon);
@@ -106,6 +113,26 @@ function optionSelected(answer) {
         option_list.children[i].classList.add("disabled");
     }
     next_btn.style.display = "block";
+}
+
+function showResultBox() {
+    info_box.classList.remove("activeInfo"); //Hide quiz info box
+    quiz_box.classList.remove("activeQuiz"); //Hide the quiz box
+    result_box.classList.add("activeResult"); //Display result-box
+    let scoreText = result_box.querySelector(".score_text");
+    if (userScore > 3) {
+        let scoreTag = '<span>and congrats!, you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else if (userScore > 1) {
+        let scoreTag = '<span>and nice quess, you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else {
+        let scoreTag = '<span>and you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+
 }
 
 function startTimer(time) {
