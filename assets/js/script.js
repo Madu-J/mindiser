@@ -6,11 +6,10 @@ let contiune_btn = info_box.querySelector(".buttons .contiune");
 let quiz_box = document.querySelector(".quiz_box");
 let timeCount = quiz_box.querySelector(".timer .timer_sec");
 let timeLine = quiz_box.querySelector("header .timer_line");
+let timeOff = quiz_box.querySelector("header .time_left");
+
 
 let option_list = document.querySelector(".option_list");
-
-let replay_btn = document.querySelector(".buttons replay");
-let exit_game_btn = document.querySelector(".buttons exit_game");
 
 // Start Quiz button active
 start_btn.onclick = () => {
@@ -61,6 +60,7 @@ restart_quiz.onclick = () => {
     clearInterval(counterLine);
     startTimerLine(widthValue);
     next_btn.style.display = "none";
+    timeOff.textContent = "Time Left";
 
 };
 
@@ -81,7 +81,10 @@ next_btn.onclick = () => {
         clearInterval(counterLine);
         startTimerLine(widthValue);
         next_btn.style.display = "none";
+        timeOff.textContent = "Time Left";
     } else {
+        clearInterval(counter);
+        clearInterval(counterLine);
         console.log("Congratulations, you have completed the Quiz!");
         showResultBox();
     }
@@ -146,11 +149,11 @@ function showResultBox() {
     result_box.classList.add("activeResult"); //Display result-box
     let scoreText = result_box.querySelector(".score_text");
     if (userScore > 3) {
-        let scoreTag = '<span>and congrats!, you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
+        let scoreTag = '<span>and nice, you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else if (userScore > 1) {
-        let scoreTag = '<span>and nice quess, you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
+        let scoreTag = '<span>and congrates, you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else {
@@ -172,6 +175,7 @@ function startTimer(time) {
         if (time < 0) {
             clearInterval(counter);
             timeCount.textContent = "00";
+            timeOff.textContent = "Time off";
 
             let correctAns = questions[que_count].answer;
             let allOptions = option_list.children.length;
