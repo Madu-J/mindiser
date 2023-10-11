@@ -51,7 +51,7 @@ next_btn.onclick = () => {
         startTimer(timeValue);
         clearInterval(counterLine);
         startTimerLine(widthValue);
-
+        next_btn.style.display = "none";
     } else {
         console.log("Congratulations, you have completed the Quiz!");
     }
@@ -105,6 +105,7 @@ function optionSelected(answer) {
     for (let i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
+    next_btn.style.display = "block";
 }
 
 function startTimer(time) {

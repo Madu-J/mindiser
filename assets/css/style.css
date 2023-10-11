@@ -263,24 +263,42 @@ section .option_list .option {
     justify-content: space-between;
 }
 
-.quiz_box footer span {
+.quiz_box footer .total-question span {
     display: flex;
-    padding-right: 28px;
+    user-select: none;
 }
 
-.quiz_box footer span p {
+footer .total-question span p {
+    font-weight: 500;
     padding: 0 5px;
 }
 
-.quiz_box footer .next_btn {
-    font-weight: 700;
-    border-radius: 5px;
+.total-question span p:first-child {
+    padding-left: 0px;
+}
+
+footer .next_btn {
+    display: none;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 130%;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #000;
+    background: #ffff00;
+    border-radius: 8px;
+    border: 1px solid #ffff00;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
 footer .next_btn:hover {
-    background: #ffff00;
+    background: #fff;
 }
+
+
+
 
 /* Style quiz result area */
 .quiz_result {
