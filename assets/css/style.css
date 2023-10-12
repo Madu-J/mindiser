@@ -379,11 +379,42 @@ footer .next_btn:hover {
 
 /* Media query for tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    .heading .logo {
+        width: 40vh;
+        left: 10%;
+    }
 
-    .quiz_box,
+    .start_btn {
+        top: 40%;
+        left: 40%;
+    }
+
+    .start_btn button {
+        font-size: 200%;
+        width: 230px;
+        height: 70px;
+    }
+
+    .info_box {
+        width: 89%;
+        height: 580px;
+        left: 35%;
+        top: 55%;
+    }
+
+    .quiz_box {
+        width: 70%;
+        height: 600px;
+        left: 40%;
+        top: 60%;
+    }
+
     .result_box {
-        width: 80%;
-        height: 350px;
+        width: 60%;
+        height: 300px;
+        left: 40%;
+        top: 42%;
+
     }
 }
 
