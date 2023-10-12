@@ -417,12 +417,13 @@ footer .next_btn:hover {
 /* Media query for Large devices(laptops and desktops, 992px and up) */
 @media screen and (min-width: 1200px) {
     .start_btn {
-        top: 70%;
+        top: 60%;
     }
 
     .heading .logo {
-        width: 40%;
-        padding-left: 0 80px;
+        width: 30%;
+        position: relative;
+        left: 10%;
         padding-top: 0 25px;
     }
 
@@ -430,7 +431,7 @@ footer .next_btn:hover {
     .quiz_box {
         width: 45%;
         height: 450px;
-        top: 90%;
-        left: 45%;
+        top: 75%;
+        left: 50%;
     }
 }
