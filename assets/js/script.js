@@ -27,7 +27,7 @@ contiune_btn.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //Show the quiz box
     showQuestions(0);
     queCounter(1);
-    startTimer(25);
+    startTimer(15);
     startTimerLine(0);
 };
 
@@ -35,7 +35,7 @@ let que_count = 0;
 let que_numb = 1;
 let counter;
 let counterLine;
-let timeValue = 25;
+let timeValue = 15;
 let widthValue = 0;
 let userScore = 0;
 
@@ -50,7 +50,7 @@ restart_quiz.onclick = () => {
     result_box.classList.remove("activeResult");
     let que_count = 0;
     let que_numb = 1;
-    let timeValue = 25;
+    let timeValue = 15;
     let widthValue = 0;
     let userScore = 0;
     showQuestions(que_count);
