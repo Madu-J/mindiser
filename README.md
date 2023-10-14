@@ -8,7 +8,7 @@ In addition Mindiser is a quiz app that wants to put in the mind of users the pr
 
 The app demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also to people who love history. The site is a fully responsive JavaScript game that will allow users to read a question and give them option to choose their answer.
 
-![Responsive Mockup](assets/images/responsive.png)
+![Responsive Mockup](assets/images/amiresponsive.png)
 
 ## Features
 
@@ -21,7 +21,7 @@ The app demonstrate how pure JavaScript works in a real-world context. The site 
 - __The Game Area__
 
   - The quiz game app have a clear information that tells the user how what to expect.
- -  The user will have four answer options to choose from
+- The user will have four answer options to choose from
   - The user will be able to choose any answer he or she thinks or knows is correct.
 - Once the user chooses an answer, its irreversible.
 - If the user answer is wrong, the app will mark what the user choosed as well as mark the correct answer.
@@ -47,7 +47,7 @@ The app demonstrate how pure JavaScript works in a real-world context. The site 
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/) ![CSS validation](assets/images/css-validation.png)
 - Lighthouse
--  No errors were found however, there was warning when passing through the official [Jshint validator](https://jigsaw.w3.org/css-validator/)
+- No errors were found however, there was warning when passing through the official [Jshint validator](https://jigsaw.w3.org/css-validator/)
 - I used devtools to run it through lighthouse to test the accessibility, Perfomance and SEO ![(Lighthouse)](assets/images/lighthouse.png)
 - JavaScript
 
@@ -60,4 +60,8 @@ The app demonstrate how pure JavaScript works in a real-world context. The site 
 
 The live link can be found here - <https://madu-j.github.io/mindiser/>
 
-## Credits
+## Credit
+
+ . CodingNepal for the details of the quiz game.
+ . Chinua Achebe author (There was a country).
+ . Wikipedia for the image of Biafra flag.
