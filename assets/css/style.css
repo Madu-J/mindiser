@@ -17,6 +17,16 @@ body {
     background: #ffff00;
 }
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 130%;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000;
+    top: 10%;
+}
+
 /* Logo */
 .heading .logo {
     position: absolute;
@@ -61,7 +71,7 @@ body {
 
 .info_box {
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 540px;
@@ -132,7 +142,7 @@ body {
 /* Quiz display area */
 .quiz_box {
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
