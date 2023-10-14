@@ -2,7 +2,7 @@
 let start_btn = document.querySelector(".start_btn button");
 let info_box = document.querySelector(".info_box");
 let exit_btn = info_box.querySelector(".buttons .exit");
-let contiune_btn = info_box.querySelector(".buttons .contiune");
+let continue_btn = info_box.querySelector(".buttons .continue");
 let quiz_box = document.querySelector(".quiz_box");
 let timeCount = quiz_box.querySelector(".timer .timer_sec");
 let timeLine = quiz_box.querySelector("header .timer_line");
@@ -21,8 +21,8 @@ exit_btn.onclick = () => {
     info_box.classList.remove("activeInfo");
 };
 
-// Contiune Quiz button active
-contiune_btn.onclick = () => {
+// Continue Quiz button active
+continue_btn.onclick = () => {
     info_box.classList.remove("activeInfo"); //Hide quiz info box
     quiz_box.classList.add("activeQuiz"); //Show the quiz box
     showQuestions(0);
@@ -42,7 +42,7 @@ let userScore = 0;
 //Nest question button active
 let next_btn = quiz_box.querySelector(".next_btn");
 let result_box = document.querySelector(".result_box");
-let restart_quiz = result_box.querySelector(".buttons .contiune");
+let restart_quiz = result_box.querySelector(".buttons .continue");
 let quit_quiz = result_box.querySelector(".buttons .exit");
 
 restart_quiz.onclick = () => {

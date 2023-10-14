@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     font-family: "Lota", sans-serif;
     background: #ffff00;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -24,25 +25,31 @@ h1 {
     text-align: center;
     letter-spacing: 2px;
     color: #000;
-    top: 10%;
+    margin-top: 50px;
+}
+
+/* Logo */
+.heading {
+    width: 100%;
+    display: block;
+    margin-top: 60px;
 }
 
 /* Logo */
 .heading .logo {
-    position: absolute;
-    width: 45vh;
+    position: relative;
+    width: 30%;
     align-items: center;
-    padding: 0 42px;
-    padding-top: 30px;
+    margin-left: 35%;
 }
 
 /* Button */
 .start_btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .info_box.activeInfo,
@@ -71,30 +78,30 @@ h1 {
 
 .info_box {
     position: absolute;
-    top: 85%;
+    width: 85%;
     left: 50%;
+    top: 80%;
     transform: translate(-50%, -50%);
-    width: 540px;
     background: black;
     color: white;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.9);
+
     transition: all 0.3s ease;
 }
 
 .info_box .quiz_info {
-    height: 60px;
     width: 100%;
     font-size: 130%;
     align-items: center;
     border-bottom: 1px solid rgb(250, 250, 0);
-    display: flex;
-    padding: 0 150px;
+    display: block;
+    padding-top: 20px;
 }
 
 .info_box .quiz_info_list {
-    padding: 0 160px;
+    padding-top: 20px;
+    text-align: center;
 }
 
 .info_box .quiz_info_list .info span {
@@ -110,8 +117,7 @@ h1 {
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 0 150px;
+    justify-content: center;
     border-top: 1px solid rgb(250, 250, 0);
 }
 
@@ -141,8 +147,7 @@ h1 {
 
 /* Quiz display area */
 .quiz_box {
-    position: absolute;
-    top: 85%;
+    position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -390,103 +395,14 @@ footer .next_btn:hover {
     h1 {
         position: relative;
         font-size: 170%;
-        right: 14%;
-
     }
 
-    .heading .logo {
-        width: 40vh;
-        left: 10%;
-    }
 
-    .start_btn {
-        top: 40%;
-        left: 40%;
-    }
-
-    .start_btn button {
-        font-size: 200%;
-        width: 230px;
-        height: 70px;
-    }
-
-    .info_box {
-        width: 89%;
-        height: 580px;
-        left: 35%;
-        top: 55%;
-    }
-
-    .quiz_box {
-        width: 70%;
-        height: 600px;
-        left: 40%;
-        top: 60%;
-    }
 
     .result_box {
         width: 60%;
         height: 300px;
         left: 40%;
         top: 42%;
-    }
-}
-
-/* Media query for Large devices(laptops and desktops, 992px and up) */
-@media screen and (min-width: 900px) {
-    .start_btn {
-        top: 80%;
-    }
-
-    /* Logo */
-    .heading .logo {
-        width: 45%;
-        margin-left: 350px;
-        margin-top: 20px;
-    }
-
-    .info_box,
-    .quiz_box,
-    .result_box {
-        top: 80%;
-        left: 55%;
-    }
-
-    .info_box .quiz_info_list {
-        padding: 0 35px;
-    }
-
-    .quiz_box,
-    .result_box {
-        width: 60%;
-        height: 500px;
-    }
-}
-
-/* Media query for Large devices(laptops and desktops, 992px and up) */
-@media screen and (min-width: 1200px) {
-    h1 {
-        left: 1%;
-    }
-
-    .start_btn {
-        top: 65%;
-        left: 50%;
-    }
-
-    .heading .logo {
-        width: 30%;
-        position: relative;
-        left: 10%;
-        padding-top: 0 25px;
-    }
-
-    .info_box,
-    .quiz_box,
-    .result_box {
-        width: 45%;
-        height: 450px;
-        top: 85%;
-        left: 50%;
     }
 }
