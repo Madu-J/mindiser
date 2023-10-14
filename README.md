@@ -1,4 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 The live link can be found here - <https://madu-j.github.io/mindiser/>
 
 # Mindiser Quiz App
@@ -44,12 +43,12 @@ The app demonstrate how pure JavaScript works in a real-world context. The site 
 ### Validator Testing
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/) ![Html validation](assets/images/html-validation.png)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/) ![CSS validation](assets/images/css-validation.png)
 - Lighthouse
 -  No errors were found however, there was warning when passing through the official [Jshint validator](https://jigsaw.w3.org/css-validator/)
-- I used devtools to run it through lighthouse to test the accessibility, Perfomance and SEO !  [(Lighthouse)](assets/images/lighthouse.png)
+- I used devtools to run it through lighthouse to test the accessibility, Perfomance and SEO ![(Lighthouse)](assets/images/lighthouse.png)
 - JavaScript
 
 ## Deployment

@@ -387,6 +387,13 @@ footer .next_btn:hover {
 
 /* Media query for tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    h1 {
+        position: relative;
+        font-size: 170%;
+        right: 14%;
+
+    }
+
     .heading .logo {
         width: 40vh;
         left: 10%;
@@ -458,8 +465,13 @@ footer .next_btn:hover {
 
 /* Media query for Large devices(laptops and desktops, 992px and up) */
 @media screen and (min-width: 1200px) {
+    h1 {
+        left: 1%;
+    }
+
     .start_btn {
-        top: 60%;
+        top: 65%;
+        left: 50%;
     }
 
     .heading .logo {
@@ -470,10 +482,11 @@ footer .next_btn:hover {
     }
 
     .info_box,
-    .quiz_box {
+    .quiz_box,
+    .result_box {
         width: 45%;
         height: 450px;
-        top: 75%;
+        top: 85%;
         left: 50%;
     }
 }
