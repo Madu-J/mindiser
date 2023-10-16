@@ -8,7 +8,6 @@ let timeCount = quiz_box.querySelector(".timer .timer_sec");
 let timeLine = quiz_box.querySelector("header .timer_line");
 let timeOff = quiz_box.querySelector("header .time_left");
 
-
 let option_list = document.querySelector(".option_list");
 
 // Start Quiz button active
@@ -61,12 +60,10 @@ restart_quiz.onclick = () => {
     startTimerLine(widthValue);
     next_btn.style.display = "none";
     timeOff.textContent = "Time Left";
-
 };
 
 quit_quiz.onclick = () => {
     window.location.reload();
-
 };
 
 //Next button active
@@ -93,11 +90,25 @@ next_btn.onclick = () => {
 //Questions and options
 function showQuestions(index) {
     let que_text = document.querySelector(".question_text");
-    let que_tag = '<span>' + questions[index].numb + ". " + questions[index].question + '</span>';
-    let option_tag = '<div class="option">' + questions[index].options[0] + '<span></span></div>'
-        + '<div class="option">' + questions[index].options[1] + '<span></span></div>'
-        + '<div class="option">' + questions[index].options[2] + '<span></span></div>'
-        + '<div class="option">' + questions[index].options[3] + '<span></span></div>';
+    let que_tag =
+        "<span>" +
+        questions[index].numb +
+        ". " +
+        questions[index].question +
+        "</span>";
+    let option_tag =
+        '<div class="option">' +
+        questions[index].options[0] +
+        "<span></span></div>" +
+        '<div class="option">' +
+        questions[index].options[1] +
+        "<span></span></div>" +
+        '<div class="option">' +
+        questions[index].options[2] +
+        "<span></span></div>" +
+        '<div class="option">' +
+        questions[index].options[3] +
+        "<span></span></div>";
     que_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
     let option = option_list.querySelectorAll(".option");
@@ -133,7 +144,6 @@ function optionSelected(answer) {
                 option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
             }
         }
-
     }
 
     //Disable other options once user select answer
@@ -149,18 +159,30 @@ function showResultBox() {
     result_box.classList.add("activeResult"); //Display result-box
     let scoreText = result_box.querySelector(".score_text");
     if (userScore > 3) {
-        let scoreTag = '<span>and nice, you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
+        let scoreTag =
+            "<span>and nice, you scored <p>" +
+            userScore +
+            "</p>out of <p>" +
+            questions.length +
+            "</p></span>";
+        scoreText.innerHTML = scoreTag;
+    } else if (userScore > 1) {
+        let scoreTag =
+            "<span>and congrates, you scored <p>" +
+            userScore +
+            "</p>out of <p>" +
+            questions.length +
+            "</p></span>";
+        scoreText.innerHTML = scoreTag;
+    } else {
+        let scoreTag =
+            "<span>and you scored <p>" +
+            userScore +
+            "</p>out of <p>" +
+            questions.length +
+            "</p></span>";
         scoreText.innerHTML = scoreTag;
     }
-    else if (userScore > 1) {
-        let scoreTag = '<span>and congrates, you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    }
-    else {
-        let scoreTag = '<span>and you scored <p>' + userScore + '</p>out of <p>' + questions.length + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    }
-
 }
 
 function startTimer(time) {
@@ -205,12 +227,13 @@ function startTimerLine(time) {
     }
 }
 
-
-
-
-
 function queCounter(index) {
     let bottom_ques_counter = quiz_box.querySelector(".total-question");
-    let totalQuesCountTag = '<span><p>' + index + '</p>of<p>' + questions.length + '</p>Questions</span>';
+    let totalQuesCountTag =
+        "<span><p>" +
+        index +
+        "</p>of<p>" +
+        questions.length +
+        "</p>Questions</span>";
     bottom_ques_counter.innerHTML = totalQuesCountTag;
 }
