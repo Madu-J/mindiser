@@ -8,7 +8,7 @@ In addition Mindiser is a quiz app that wants to put in the mind of users the pr
 
 The app demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also to people who love history. The site is a fully responsive JavaScript game that will allow users to read a question and give them option to choose their answer.
 
-![Responsive Mockup](assets/images/amiresponsive.png)
+![Responsive Mockup](assets/images/test-responsive.png)
 
 ## Features
 
